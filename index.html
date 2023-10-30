@@ -1,0 +1,32 @@
+<html style="padding: 15px;">
+  <header>
+    
+    <p>TRAMPO DE BOTÂNICA</p>
+    <p>Giovani</p>
+    <p>Inara</p>
+    <p>Rebeca</p>
+    <p>Renato</p>
+    <p>Susana</p>
+    <p>Thalyta</p>
+    <body>
+      <label for="fname">N° células:</label><br />
+      <input type="number" name="n_celulas" id="numero_celulas"/><br /><br />
+        
+      <label for="fname">N° células:</label><br /><br />
+      <label for="fname" id="resultado"> - </label><br /><br />
+      
+      <button onclick="myFunction()">Click me</button>
+    </body>
+  </header>
+</html>
+
+<br><br>
+1mm x 1mm x 20um]
+
+<script>
+  function myFunction() {
+    let numero = document.getElementById("numero_celulas").value;
+    console.log(numero);
+    document.getElementById("resultado").innerHTML = numero;
+  }
+</script>
