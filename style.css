@@ -29,15 +29,17 @@ header {
 }
 
 #titulo {
-    padding: 10px;
+    margin: 0;
+    padding: 15px;
     width: 150%;
-    font-size: 1.8vmax;
+    font-size: 2vmax;
     font-weight: 400;
 }
 
 #botao_info {
-    padding: 10px;
-    font-size: 1.8vmax;
+    padding: 15px;
+    margin: 0;
+    font-size: 2vmax;
     font-weight: 400;
     width: 15%;
 }
