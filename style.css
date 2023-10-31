@@ -1,4 +1,10 @@
-*:focus {outline:0;}
+input,
+textarea,
+button,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 
 html {
     text-align: center;
