@@ -9,38 +9,31 @@
   </header>
   <body>
     <div class="form">
-      <label for="fname">N° células:</label><br />
+      <label>N° células:</label><br />
       <input type="number" name="n_celulas" id="numero_celulas" /> <br />
-      <label for="fname">*Lâmina microscópio (1mm x 1mm x 20um)</label><br />
+      <label>*Lâmina microscópio (1mm x 1mm x 20um)</label><br />
       <br /><br />
 
       <label for="fname">Diâmetro colmo (cm)</label><br />
-      <input
-        type="number"
-        name="n_diametro"
-        id="numero_diametro"
-      /><br /><br /><br />
+      <input type="number" name="n_diametro" id="numero_diametro" /><br />
+      <label class="resultados" id="resultado_colmo"> </label>
+      <br /><br /><br />
 
-      <label for="fname">Comprimento colmo (cm)</label><br />
-      <input
-        type="number"
-        name="n_diametro"
-        id="numero_comprimento"
-      /><br /><br /><br>
+      <label>Comprimento colmo (cm)</label><br />
+      <input type="number" name="n_diametro" id="numero_comprimento" /><br />
+      <label class="resultados" id="resultado_comprimento_colmo"> </label
+      ><br /><br />
 
-      <label for="fname">N° células:</label><br /><br />
-      <label for="fname" id="resultado"> - </label><br /><br />
+      <label>N° células totais:</label><br /><br />
+      <label id="resultado"> - </label><br /><br />
 
       <button onclick="calcular()">Click me</button>
     </div>
   </body>
 </html>
 
-
 <script src="script.js"></script>
 <script src="sidebar.js"></script>
-
-
 
 <div class="sidebar">
   <h2>UNIVERSIDADE DE SÃO PAULO</h2>

@@ -1,3 +1,5 @@
+html:focus {outline:0;}
+
 html {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -10,10 +12,10 @@ body {
 
 .form {
     text-align: left;
-    width: 50%;
+    width: 70%;
     margin: auto;
     padding: 10px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 header {
@@ -27,13 +29,13 @@ header {
 #titulo {
     padding: 10px;
     width: 150%;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
 }
 
 #botao_info {
     padding: 10px;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 400;
     width: 15%;
 }
@@ -46,15 +48,21 @@ input[type="number"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  font-size: 22px;
 }
 
 label {
   text-align: left;
+}
+
+.resultados {
+    color: rgb(87, 87, 87);
+    font-size: 18px;
 }
 
 .sidebar {
@@ -64,7 +72,7 @@ label {
     top: 0;
     right: -250000px;
     transition-duration: 0.6s;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     text-align: center;
     font-size: 18px;
     color: white;
