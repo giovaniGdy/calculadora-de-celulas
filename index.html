@@ -1,32 +1,64 @@
-<html style="padding: 15px;">
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <header>
-    
-    <p>TRAMPO DE BOTÂNICA</p>
-    <p>Giovani</p>
-    <p>Inara</p>
-    <p>Rebeca</p>
-    <p>Renato</p>
-    <p>Susana</p>
-    <p>Thalyta</p>
-    <body>
+    <p id="titulo">CALCULADORA DE CÉLULAS</p>
+
+    <p id="botao_info" onclick="sidebar()">≡</p>
+  </header>
+  <body>
+    <div class="form">
       <label for="fname">N° células:</label><br />
-      <input type="number" name="n_celulas" id="numero_celulas"/><br /><br />
-        
+      <input type="number" name="n_celulas" id="numero_celulas" /> <br />
+      <label for="fname">*Lâmina microscópio (1mm x 1mm x 20um)</label><br />
+      <br /><br />
+
+      <label for="fname">Diâmetro colmo (cm)</label><br />
+      <input
+        type="number"
+        name="n_diametro"
+        id="numero_diametro"
+      /><br /><br /><br />
+
+      <label for="fname">Comprimento colmo (cm)</label><br />
+      <input
+        type="number"
+        name="n_diametro"
+        id="numero_comprimento"
+      /><br /><br /><br>
+
       <label for="fname">N° células:</label><br /><br />
       <label for="fname" id="resultado"> - </label><br /><br />
-      
-      <button onclick="myFunction()">Click me</button>
-    </body>
-  </header>
+
+      <button onclick="calcular()">Click me</button>
+    </div>
+  </body>
 </html>
 
-<br><br>
-1mm x 1mm x 20um]
 
-<script>
-  function myFunction() {
-    let numero = document.getElementById("numero_celulas").value;
-    console.log(numero);
-    document.getElementById("resultado").innerHTML = numero;
-  }
-</script>
+<script src="script.js"></script>
+<script src="sidebar.js"></script>
+
+
+
+<div class="sidebar">
+  <h2>UNIVERSIDADE DE SÃO PAULO</h2>
+  <h3>Faculdade de Zootecnia e Engenharia de Alimentos</h3>
+  <h3>Departamento de Engenharia de Biossistemas (ZEB)</h3>
+  <br />
+  <h3>Botânica - ZAB 1010</h3>
+  <p>Prof. Dr. João Paulo Rodrigues Marques</p>
+  <br /><br />
+  <p>Giovani Godoy</p>
+  <p>Inara Saito</p>
+  <p>Rebeca Nobrega</p>
+  <p>Renato Cabral</p>
+  <p>Susana De Carli</p>
+  <p>Thalyta C. de Lima Silva</p>
+  <br /><br />
+  <p onclick="fecharSidebar()" id="botaoFechar">✖ FECHAR</p>
+  <br /><br />
+  <p>Novembro</p>
+  <p>2023</p>
+</div>

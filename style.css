@@ -1,0 +1,88 @@
+html {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.form {
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+
+header {
+    position: relative;
+    display: inline-flex;
+    background-color: green;
+    width: 100%;
+    color: white;
+}
+
+#titulo {
+    padding: 10px;
+    width: 150%;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#botao_info {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    width: 15%;
+}
+
+#botao_info:hover {
+    cursor: pointer;
+}
+
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  text-align: left;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: -250000px;
+    transition-duration: 0.6s;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.sidebar p {
+    padding: 0;
+    margin: 1%;
+}
+
+#botaoFechar {
+    font-size: 30px;
+    padding: 25px;
+    font-weight: 2000;
+    color: rgb(255, 0, 0);
+}
+
+#botaoFechar:hover {
+    cursor: pointer;
+    padding: 25px;
+}
