@@ -1,4 +1,4 @@
-html:focus {outline:0;}
+*:focus {outline:0;}
 
 html {
     text-align: center;
@@ -74,7 +74,7 @@ label {
     transition-duration: 0.6s;
     background-color: rgba(0, 0, 0, 0.95);
     text-align: center;
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
     color: white;
     overflow-y: auto;
 }
@@ -85,7 +85,7 @@ label {
 }
 
 #botaoFechar {
-    font-size: 1.8vmax;
+    font-size: 1.5vmax;
     padding: 15px;
     font-weight: 2000;
     color: rgb(255, 0, 0);
