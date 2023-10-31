@@ -3,5 +3,5 @@ function sidebar() {
 }
 
 function fecharSidebar() {
-  document.getElementsByClassName("sidebar")[0].style.right = "-250000px";
+  document.getElementsByClassName("sidebar")[0].style.right = "-100vw";
 }
