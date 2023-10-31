@@ -29,13 +29,13 @@ header {
 #titulo {
     padding: 10px;
     width: 150%;
-    font-size: 35px;
+    font-size: 1.8vmax;
     font-weight: 400;
 }
 
 #botao_info {
     padding: 10px;
-    font-size: 1.5vmax;
+    font-size: 1.8vmax;
     font-weight: 400;
     width: 15%;
 }
@@ -74,8 +74,9 @@ label {
     transition-duration: 0.6s;
     background-color: rgba(0, 0, 0, 0.95);
     text-align: center;
-    font-size: 1vmax;
+    font-size: 2vmax;
     color: white;
+    overflow-y: auto;
 }
 
 .sidebar p {
@@ -84,13 +85,13 @@ label {
 }
 
 #botaoFechar {
-    font-size: 1vmax;
-    padding: 25px;
+    font-size: 2vmax;
+    padding: 15px;
     font-weight: 2000;
     color: rgb(255, 0, 0);
 }
 
 #botaoFechar:hover {
     cursor: pointer;
-    padding: 25px;
+    padding: 15px;
 }
