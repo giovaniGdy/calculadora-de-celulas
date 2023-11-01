@@ -1,12 +1,14 @@
 function calcular() {
-  let numero = document.getElementById("numero_celulas").value;
-  let diametro = document.getElementById("numero_diametro").value;
-  let Comprimento = document.getElementById("numero_comprimento").value;
-  let n_entrenos = document.getElementById("numero_entreno").value;
-  let n_perfilho = document.getElementById("numero_perfilho").value;
-  let valor_area = document.getElementById("numero_area").value;
+  let numero = Math.abs(document.getElementById("numero_celulas").value);
+  let diametro = Math.abs(document.getElementById("numero_diametro").value);
+  let Comprimento = Math.abs(document.getElementById("numero_comprimento").value);
+  let n_entrenos = Math.abs(document.getElementById("numero_entreno").value);
+  let n_perfilho = Math.abs(document.getElementById("numero_perfilho").value);
+  let valor_area = Math.abs(document.getElementById("numero_area").value);
+
 
   area_colmo = 3.14159265359 * Math.pow(diametro / 2, 2);
+
 
   if (!numero) {
     alert("Número de células não informado!");
@@ -17,7 +19,7 @@ function calcular() {
   }
 
   if (numero > 0 && diametro > 0) {
-    let vol_circulo = numero * 100 * area_colmo;
+    let vol_circulo = Math.floor(numero * 100 * area_colmo);
     let vol_circulo_formated = vol_circulo.toLocaleString("brl");
 
     document.getElementById("resultado_colmo").innerHTML =
@@ -26,23 +28,20 @@ function calcular() {
       " cm<sup>2</sup> = " +
       vol_circulo_formated;
 
-    if (!Comprimento) {
-      document.getElementById("resultado").innerHTML = vol_circulo_formated;
-    } else {
       let quant_colmo = vol_circulo * (Comprimento * 10000);
 
       let quant_colmo_formated = quant_colmo.toLocaleString("brl");
       document.getElementById("resultado_comprimento_colmo").innerHTML =
         "Quant. em um entrenó de " +
         Comprimento +
-        "cm de altura = " +
+        " cm de altura = " +
         quant_colmo_formated;
 
       let quant_n_colmo = quant_colmo * n_entrenos;
 
       let quant_n_colmo_formated = quant_n_colmo.toLocaleString("brl");
       document.getElementById("resultado_numero_entreno").innerHTML =
-        "Quant. em um colmo de " +
+        "Quant. em um colmo com " +
         n_entrenos +
         " entrenós = " +
         quant_n_colmo_formated;
@@ -56,7 +55,7 @@ function calcular() {
         " perfilhos = " +
         quant_n_perfilho_formated;
 
-      let quant_area = (valor_area/0.45)*4*quant_n_perfilho;
+      let quant_area = Math.floor((valor_area/0.45)*4*quant_n_perfilho);
 
       let quant_area_formated = quant_area.toLocaleString("brl");
       document.getElementById("resultado_area").innerHTML =
@@ -65,7 +64,11 @@ function calcular() {
         " m<sup>2</sup> = " +
         quant_area_formated;
 
-      document.getElementById("resultado").innerHTML = quant_area_formated;
+      
+      let arr = [quant_colmo, quant_n_colmo, quant_n_perfilho, quant_area]
+      
+      document.getElementById("resultado").innerHTML = Math.max(...arr).toLocaleString("brl");
+
     }
   }
-}
+
