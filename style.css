@@ -1,51 +1,51 @@
 * {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .form {
-    text-align: left;
-    width: 70%;
-    margin: auto;
-    padding: 10px;
-    font-size: 1.5vmax;
+  text-align: left;
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+  font-size: 25px;
 }
 
 header {
-    position: relative;
-    display: inline-flex;
-    background-color: green;
-    width: 100%;
-    color: white;
+  position: relative;
+  display: inline-flex;
+  background-color: green;
+  width: 100%;
+  color: white;
 }
 
 #titulo {
-    margin: 0;
-    padding: 15px;
-    width: 150%;
-    font-size: 2vmax;
-    font-weight: 400;
+  margin: 0;
+  padding: 15px;
+  width: 150%;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 #botao_info {
-    padding: 15px;
-    margin: 0;
-    font-size: 2vmax;
-    font-weight: 400;
-    width: 15%;
+  padding: 15px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  width: 15%;
 }
 
 #botao_info:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 input[type="number"],
@@ -57,7 +57,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
-  font-size: 1vmax;
+  font-size: 20px;
 }
 
 label {
@@ -65,37 +65,49 @@ label {
 }
 
 .resultados {
-    color: rgb(87, 87, 87);
-    font-size: 1vmax;
+  color: rgb(87, 87, 87);
+  font-size: 20px;
 }
 
 .sidebar {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    right: -100vw;
-    transition-duration: 0.6s;
-    background-color: rgba(0, 0, 0, 0.95);
-    text-align: center;
-    font-size: 1.5vmax;
-    color: white;
-    overflow-y: auto;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: -100vw;
+  transition-duration: 0.6s;
+  background-color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  overflow-y: auto;
 }
 
 .sidebar p {
-    padding: 0;
-    margin: 0.2vmax;
+  padding: 0;
+  margin: 0.2vmax;
 }
 
 #botaoFechar {
-    font-size: 1.5vmax;
-    padding: 15px;
-    font-weight: 2000;
-    color: rgb(255, 0, 0);
+  font-size: 20px;
+  padding: 15px;
+  font-weight: 2000;
+  color: rgb(255, 0, 0);
 }
 
 #botaoFechar:hover {
-    cursor: pointer;
-    padding: 15px;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#botao_calcular {
+  background-color: #4caf50; /* Green */
+  border: none;
+  width: 100%;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

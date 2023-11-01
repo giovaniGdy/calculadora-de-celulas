@@ -20,29 +20,45 @@
   <header>
     <p id="titulo">CALCULADORA DE CÉLULAS</p>
 
-    <p id="botao_info" onclick="sidebar()">≡</p>
+    <p id="botao_info" onclick="sidebar()">Informações</p>
   </header>
   <body>
     <div class="form">
       <label>N° células:</label><br />
       <input type="number" name="n_celulas" id="numero_celulas" /> <br />
       <label>*Lâmina microscópio (1mm x 1mm x 20um)</label><br />
-      <br /><br />
+      <br />
 
       <label for="fname">Diâmetro colmo (cm):</label><br />
       <input type="number" name="n_diametro" id="numero_diametro" /><br />
       <label class="resultados" id="resultado_colmo"> </label>
-      <br /><br /><br />
+      <br /><br>
 
-      <label>Comprimento colmo (cm):</label><br />
-      <input type="number" name="n_diametro" id="numero_comprimento" /><br />
+      <label>Comprimento entrenó (cm):</label><br />
+      <input type="number" name="n_compr_diametro" id="numero_comprimento" /><br />
       <label class="resultados" id="resultado_comprimento_colmo"> </label
-      ><br /><br />
+      ><br /><br>
 
-      <label>N° células totais:</label><br /><br />
+      <label>N° entrenós (cm):</label><br />
+      <input type="number" name="n_entreno" id="numero_entreno" /><br />
+      <label class="resultados" id="resultado_numero_entreno"> </label
+      ><br /><br>
+      
+      <label>N° perfilhos:</label><br />
+      <input type="number" name="n_perfilhos" id="numero_perfilho" /><br />
+      <label class="resultados" id="resultado_numero_perfilho"> </label
+      ><br /> <br>
+
+      <label>Area desejada (m<sup>2</sup>): </label><br />
+      <input type="number" name="n_perfilhos" id="numero_area" /><br />
+      <label>*Plantio segundo Embrapa (0,3m x 1,5m)</label><br />
+      <label class="resultados" id="resultado_area"> </label
+      ><br /> <br>
+
+      <label>N° células totais:</label>
       <label id="resultado"> - </label><br /><br />
 
-      <button onclick="calcular()">Click me</button>
+      <button id="botao_calcular" onclick="calcular()">Calcular</button>
     </div>
   </body>
 </html>
