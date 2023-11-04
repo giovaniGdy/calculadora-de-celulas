@@ -17,7 +17,7 @@ body {
   width: 70%;
   margin: auto;
   padding: 10px;
-  font-size: 2vw;
+  font-size: 25px;
 }
 
 header {
@@ -32,7 +32,7 @@ header {
   margin: 0;
   padding: 15px;
   width: 150%;
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -41,7 +41,7 @@ header {
   right: 0;
   padding: 15px;
   margin: 0;
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: 400;
   width: 15%;
 }
@@ -59,7 +59,7 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
-  font-size: 2vw;
+  font-size: 20px;
 }
 
 label {
@@ -68,7 +68,11 @@ label {
 
 .resultados {
   color: rgb(87, 87, 87);
-  font-size: 2vw;
+  font-size: 20px;
+}
+
+.info_input {
+  font-size: 15px;
 }
 
 .sidebar {
@@ -80,7 +84,7 @@ label {
   transition-duration: 0.6s;
   background-color: rgba(0, 0, 0, 0.95);
   text-align: center;
-  font-size: 2vw;
+  font-size: 20px;
   color: white;
   overflow-y: auto;
 }
@@ -111,5 +115,5 @@ label {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2vw;
+  font-size: 16px;
 }
